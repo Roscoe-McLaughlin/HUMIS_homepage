@@ -1,0 +1,127 @@
+div#container {
+    /*border: 1px solid black;*/
+    /*min-height: 500px;*/
+    min-width: 900px;
+    margin: 0 auto 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+    > * {
+        /*border: 1px dotted red;*/
+        margin: 0 5px;
+
+        > img {
+            width: 100%;
+        }
+    }
+
+    section.content {
+        background: url("files/uofu_medallion_rt.gif") bottom right no-repeat;
+
+        div.nav {
+            text-align: right;
+
+            a {
+                /*border-right: 1px solid black;*/
+                color: black;
+                text-decoration: none;
+                text-transform: uppercase;
+                /*padding: 0 10px;*/
+
+                &:hover {
+                        text-decoration: underline;
+                }
+
+                img {
+
+                }
+            }
+
+            span:after{
+                content: '|';
+                margin: 0 5px;
+            }
+
+            &.bottom-nav {
+                a {
+                    text-transform: lowercase;
+                }
+            }
+        }
+
+        div.brown-box {
+            background-color: lightgray;
+            border-radius: 10px;
+            margin: 15px 15px 100px 15px;
+            padding: 25px;
+            min-height: 900px;
+
+            nav {
+                float: left;
+                padding-left: 30px;
+                width: 30%;
+                /*border: 1px solid black;*/
+
+                a{
+                    text-decoration: none;
+                    display: block;
+                    font-size: 20px;
+                    color: black;
+                    border-bottom: darkgreen 2px solid;
+                    /*margin: 0 10px 0 0;*/
+                    padding: 15px 0 15px 20px;
+
+                    &:hover {
+                        background-color: slategray;
+                    }
+                }
+            }
+
+            article {
+                float: right;
+                background-color: white;
+                padding: 10px;
+                width: 60%;
+                img {
+                    width: 100%;
+                }
+                h2 {
+                    color: red;
+                    border-bottom: red 2px dotted;
+                    text-transform: uppercase;
+                    font-weight: normal;
+                }
+                p {
+                    font-size: 21px;
+
+                    span {
+                        font-weight: bold;
+                        fontsize: 110%;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    display: block;
+                    font-size: 21px;
+                    color: red;
+                    float: right;
+                    /*border-bottom: darkgreen 2px solid;*/
+                    /*margin: 0 10px 0 0;*/
+                    padding: 5px;
+
+                    &:hover {
+                        background-color: lightgray;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: darkolivegreen;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+    }
+
+}
