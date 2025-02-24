@@ -54,6 +54,7 @@ div#container {
             margin: 15px 15px 100px 15px;
             padding: 25px;
             min-height: 900px;
+            position: relative;
 
             nav.left-side {
                 float: left;
@@ -119,6 +120,18 @@ div#container {
 
                 div.clear-float{
                     clear: both;
+                }
+
+                }
+            nav.login {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: 0 0 70px 30px;
+
+                img {
+                    display: block;
+                    margin: 10px 0;
                 }
             }
         }
